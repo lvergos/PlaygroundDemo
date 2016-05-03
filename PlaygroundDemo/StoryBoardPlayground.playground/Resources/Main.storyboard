@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Info View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Class1" id="BYZ-38-t0r" customClass="InfoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8CU-qJ-MQw">
+                                <rect key="frame" x="0.0" y="60" width="600" height="540"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" red="0.38183933599999997" green="0.39679015099999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <sections>
+                                    <tableViewSection headerTitle="Section-1" id="bq5-aj-0h9">
+                                        <cells>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="CbL-Em-Dqz">
+                                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CbL-Em-Dqz" id="e7n-OV-elA">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l8t-kj-PbG">
+                                                            <rect key="frame" x="51" y="-49" width="240" height="128"/>
+                                                            <color key="backgroundColor" red="0.3899717261729182" green="1" blue="0.3186268968285535" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </view>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="l8t-kj-PbG" secondAttribute="bottom" constant="-43" id="45N-iI-ZzL"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="l8t-kj-PbG" secondAttribute="trailing" constant="301" id="lw4-Yw-EFn"/>
+                                                        <constraint firstItem="l8t-kj-PbG" firstAttribute="leading" secondItem="e7n-OV-elA" secondAttribute="leadingMargin" constant="43" id="viW-EJ-gAN"/>
+                                                        <constraint firstItem="l8t-kj-PbG" firstAttribute="top" secondItem="e7n-OV-elA" secondAttribute="topMargin" constant="-57" id="y1w-Rf-WTB"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </cells>
+                                    </tableViewSection>
+                                </sections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.4431372549" green="0.4431372549" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8CU-qJ-MQw" secondAttribute="bottom" id="SRM-2h-3R6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8CU-qJ-MQw" secondAttribute="trailing" constant="-20" id="ajk-g3-C33"/>
+                            <constraint firstItem="8CU-qJ-MQw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="fib-c5-hLn"/>
+                            <constraint firstItem="8CU-qJ-MQw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="rk9-sF-vjj"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ajk-g3-C33"/>
+                                <exclude reference="fib-c5-hLn"/>
+                                <exclude reference="rk9-sF-vjj"/>
+                                <exclude reference="SRM-2h-3R6"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="239" y="322"/>
+        </scene>
+    </scenes>
+</document>
